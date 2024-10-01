@@ -1,0 +1,474 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+@font-face {
+    font-family: "Inter";
+    src: url('../font-style-nav/inter/static/Inter-Regular.ttf');
+}
+.main-container{
+    width:100%;
+    height:auto ;
+}
+.nav-bar{
+    background-color: white;
+    height:6vh;
+    width:100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 20;
+}
+.nav-container{
+    width:80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.nav-items{
+    display: flex;
+    gap:30px;
+}
+.nav-item,.nav-item1{
+    font-size:17px;
+    color:black;
+    font-family:"Inter";
+    transition:  0.8s ease-in-out;
+}
+.nav-item:hover{
+    border-bottom: 1px solid black;
+}
+.first-page{
+   position: relative;
+
+   top:10vh;
+   display: flex;
+   justify-content: center;
+}
+.first-page-container{
+    width:80vw ;
+}
+.first-upper{
+    display: flex;
+    gap:50px;
+}
+.first-left{
+    width:40vw ;
+}
+.first-right{
+    height:70vh;
+    width:40vw ;
+}
+.main-text{
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 70px;
+
+}
+.blue-color{
+    color:#3873F3;
+}
+.first-btn{
+    width:7vw ;
+    height:4vh;
+    background-color: #3873F3;
+    border:none ;
+    border-radius: 5px;
+    color:white;
+    font-family: "Inter";
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
+.first-btn:hover{
+    color:#3873F3;
+    background-color: black;
+}
+.first-low{
+    display: flex;
+    gap:20px;
+}
+.firstPage-logo{
+    text-decoration: none;
+    color:black;
+}
+.firstPage-logo:hover{
+    color:#3873F3;
+}
+.fa-brands{
+    font-size: 30px;
+}
+/* about-me */
+.about-me-page{
+    position: relative;
+    top:25vh;
+    height:93vh;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.about-me-container{
+    width:80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.aboutm-me-heading{
+    text-align: center;
+    color:#3873F3;
+    font-family: "Inter-SemiBold";
+    font-size: 35px;
+    font-weight: 800;
+    height: 50px;
+}
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url('../font-style-nav/inter/static/Inter-SemiBold.ttf');
+}
+.about-me-line{
+    height:3px;
+    width:65px;
+    background-color: #3873F3;
+    margin-bottom: 40px;
+}
+.about-me-content{
+    display: flex;
+    gap:80px;
+}
+.about-me-photo{
+    height:60vh;
+    width:25vw;
+    background: url("Images/about-me-img.png") ;
+    background-repeat: none;
+   background-size: cover;
+    border-radius: 15px;
+}
+.about-me-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:40vw;
+    box-sizing: border-box;
+}
+.about-me-p1{
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 800;
+}
+.about-me-p2{
+    font-family: "Inter";
+}
+/* skills */
+
+.skills-para-head{
+    font-family: "Inter";
+    font-weight: 800;
+    font-size:25px;
+}
+.skills-para{
+    font-family: "Inter";
+    margin-bottom: 20px;
+}
+.skills-collect{
+    display: flex;
+    flex-direction:column;
+    gap:25px;
+}
+.skill{
+    height:45px;
+    width:auto;
+    background-color:white;
+    box-shadow: 1px 1px 25px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+}
+.skill:hover{
+    box-shadow: 1px 1px 25px #3873F3;
+}
+.skill-up{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-top: 5px;
+    height:80%;
+}
+.skill-content{
+    display: flex;
+    width:90%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter";
+}
+.skill-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.skillBar{
+    width:100%;
+    height: 10%;
+    background-color: white;
+}
+#progressbar-1 ,#progressbar-2,#progressbar-3,#progressbar-4{
+    width:0%;
+    height:100%;
+    background-color: #3873F3;
+    transition: 0.3s ease-in-out;
+}
+.skills-left-portion{
+    width:40vw;
+}
+.skills-right-img{
+    height:60vh;
+    width:30vw;
+    background: url("Images/skills-img.jpg") ;
+    background-repeat: none;
+   background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #3873F3;
+}
+/* projects */
+
+.projects-list{
+    margin-top: 40px;
+    display: flex;
+    gap:30px;
+    overflow: hidden;
+    width:100%;
+    align-items: center;
+    transition: 0.3s linear;
+    border-right: 15px groove #3873F3;
+    border-left: 15px groove #3873F3 ;
+}
+.project{
+    min-height: 300px;
+    min-width:250px ;
+    height:400px ;
+    width:250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border:2px solid #3873F3;
+}
+#slideset3 > *:first-child {
+    animation: autoplay3 20s linear 0s infinite normal none}
+  @keyframes autoplay3{
+    20% {
+        margin: 0px 0px 0px -285px;
+    }
+    40% {
+        margin: 0px 0px 0px -570px;
+    }
+    60% {
+        margin: 0px 0px 0px -855px;
+    }
+    80% {
+        margin: 0px 0px 0px -1140px;
+    }
+    100% {
+        margin: 0px 0px 0px -1404px;
+    }
+  }
+.project:hover{
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: multiply;
+}
+
+.p1{
+    background: url('Images/inventory.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p2{
+    background: url('Images/code-pen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p3{
+    background: url('Images/college-recommender.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p4{
+    background: url('Images/weather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p5{
+
+    background: url('Images/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.link{
+    position: relative;
+    top:20vh;
+}
+.projectContent{
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    display: none;
+}
+.project-line{
+    width: 60%;
+    height:2px;
+    background: white;
+}
+.project-heading{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.project-para{
+    color:white;
+    font-size: 15px;
+    text-align: center;
+}
+.project:hover .projectContent{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* contact */
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    font-family: "Inter";
+}
+.input{
+    border:2px solid rgba(0,0,0,0.7);
+    border-radius: 5px;
+    width:25vw ;
+}
+.form input{
+    height:6vh;
+}
+.form input::placeholder{
+    font-family: "Inter";
+    position: relative;
+    left:5px;
+}
+.text-area{
+    height:30vh ;
+    resize: none;
+    overflow: hidden;
+}
+.form-btn{
+    width:20%;
+    background-color: black;
+    color: #3873F3;
+    border:2px solid rgba(0,0,0,0.7);
+    border-radius: 5px;
+    font-family: "Inter";
+    transition: 0.3s ease-in-out;
+
+}
+.form-btn:hover{
+    color:black;
+    background-color: #3873F3;
+    border:none;
+}
+/* rest */
+.rest-of-webpage{
+    position: relative;
+    top:15vh;
+    width:100%;
+    height:12vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.rest-container{
+    width:80vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rest-text-head{
+    font-family: "Inter";
+    font-size: 40px;
+    color: #3873F3;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+.rest-links{
+    display: flex;
+    gap: 30px;
+}
+.rest-logo{
+    text-decoration: none;
+    color:#3873F3;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.rest-logo:hover{
+    color:white;
+}
+.rest-copyright{
+    display: flex;
+    gap:10px;
+    color:#3873F3;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 800;
+}

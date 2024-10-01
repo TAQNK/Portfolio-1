@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <title>Tanishq Pal</title>
+    <link rel="stylesheet" href="CSS/main.css" >
+    <script src="https://kit.fontawesome.com/0a1bd682b7.js" crossorigin="anonymous" defer></script>
+    <script type="text/javascript"src="JS/tilt.js" defer></script>
+    <script src="JS/j1.js"></script>
+</head>
+
+<body>
+    <div class="top" id="top"></div>
+    <div class="main-container">
+        <div class="nav-bar">
+            <div class="nav-container">
+                <div class="nav-item1">Tanishq</div>
+                <div class="nav-items">
+                    <a href="#top">
+                        <div class="nav-item">Home</div>
+                    </a>
+                    <a href="#about-me">
+                        <div class="nav-item">About</div>
+                    </a>
+                    <a href="#skills">
+                        <div class="nav-item">Skills</div>
+                    </a>
+                    <a href="#projects">
+                        <div class="nav-item">Projects</div>
+                    </a>
+                    <a href="#contact-me">
+                        <div class="nav-item">Contact</div>
+                    </a>
+                    <a href="./resume/MAIN RESUME.pdf" target="_blank">
+                        <div class="nav-item">Resume</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="first-page" id="first-page">
+            <div class="first-page-container">
+                <div class="first-upper">
+                    <div class="first-left">
+                        <p class="main-text">Hi,</p>
+                        <p class="main-text">I'am <span class="main-text blue-color">Tanishq</span> </p>
+                        <p class="main-text">Software Eng.</p>
+                        <button type="button" class="first-btn"
+                            onclick="window.location.href='#contact-me'">Contact</button>
+                    </div>
+                    <div class="first-right" data-tilt>
+                        <!-- image -->
+                        <img src="CSS/Images/profilePhoto.png">
+                    </div>
+                </div>
+                <div class="first-low">
+                    <a href="https://www.linkedin.com/in/tanishqpal/" target="_blank" class="firstPage-logo"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.deviantart.com/tanishq1345" class="firstPage-logo" target="_blank"><i
+                            class="fa-brands fa-deviantart"></i></a>
+                    <a href="https://github.com/TAQNK" class="firstPage-logo" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about section -->
+        <div id="about-me" class="link"></div>
+        <div class="about-me-page">
+            <div class="about-me-container">
+                <div class="aboutm-me-heading">About</div>
+                <div class="about-me-line"></div>
+                <div class="about-me-content">
+                    <div class="about-me-photo" data-tilt data-tilt-scale="1.1" >
+                    </div>
+                    <div class="about-me-para">
+                        <p class="about-me-p1">I'am Tanishq</p>
+                        <p class="about-me-p2">As a software engineer, I blend creativity and tech savvy to craft
+                            innovative solutions, with a keen interest in data analysis to drive informed
+                            decision-making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills -->
+        <div id="skills" class="link"></div>
+        <div class="about-me-page">
+            <div class="about-me-container">
+                <div class="aboutm-me-heading">Skills</div>
+                <div class="about-me-line"></div>
+                <div class="about-me-content">
+                    <div class="skills-left-portion">
+                        <p class="skills-para-head">Professional Skills</p>
+                        <p class="skills-para">I bring a diverse set of skills honed through years of experience in
+                            software development. My expertise includes below mentioned skills, enabling me to deliver
+                            high-quality results on complex projects. I have a proven track record of problem sovling
+                            and creating optimal solutions and am proficient in making automated processes to reduce
+                            time in duing it manually.</p>
+                        <div class="skills-collect">
+                            <div class="skill" onmouseover="move()">
+                                <div class="skill-up">
+                                    <div class="skill-content s-1">
+                                        <div class="skill-logo"><i class="fa-brands fa-html5"></i> HTML</div>
+                                        <div id="skillPercentage-1"></div>
+                                    </div>
+                                </div>
+                                <div class="skillBar">
+                                    <div id="progressbar-1"></div>
+                                </div>
+                            </div>
+                            <div class="skill " onmouseover="move()">
+                                <div class="skill-up">
+                                    <div class="skill-content s-2">
+                                        <div class="skill-logo"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                                        <div id="skillPercentage-2"></div>
+                                    </div>
+                                </div>
+                                <div class="skillBar">
+                                    <div id="progressbar-2"></div>
+                                </div>
+                            </div>
+                            <div class="skill " onmouseover="move()">
+                                <div class="skill-up">
+                                    <div class="skill-content s-3">
+                                        <div class="skill-logo"><i class="fa-brands fa-js"></i> JS</div>
+                                        <div id="skillPercentage-3"></div>
+                                    </div>
+                                </div>
+                                <div class="skillBar">
+                                    <div id="progressbar-3"></div>
+                                </div>
+                            </div>
+                            <div class="skill " onmouseover="move()">
+                                <div class="skill-up">
+                                    <div class="skill-content s-4">
+                                        <div class="skill-logo"><i class="fa-solid fa-database"></i> SQL</div>
+                                        <div id="skillPercentage-4"></div>
+                                    </div>
+                                </div>
+                                <div class="skillBar">
+                                    <div id="progressbar-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-right-img">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Work -->
+        <div id="projects" class="link"></div>
+        <div class="about-me-page">
+            <div class="about-me-container">
+                <div class="aboutm-me-heading">Projects</div>
+                <div class="about-me-line"></div>
+                <div class="about-me-content"></div>
+                <div class="projects-list" id="slideset3">
+                    <a href="Projects/Inventory Mangement System/HTML/index.html" target="_blank">
+                        <div class="project p1">
+                            <div class="projectContent">
+                                <div class="project-heading">IMS</div>
+                                <div class="project-line"></div>
+                                <div class="project-para">An inventory management system is a tool that tracks and controls stock levels, orders, and shipments in real time. It helps ensure you have the right amount of inventory at the right time, reduces errors, and improves efficiency by providing insights and managing inventory-related tasks automatically.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projects/Project 2(CodePen)/index.html" target="_blank">
+                        <div class="project p2">
+                            <div class="projectContent">
+                                <div class="project-heading">CODEPEN</div>
+                                <div class="project-line"></div>
+                                <div class="project-para">The Web Dev Code Editor is a powerful tool designed to streamline web development with features like real-time syntax highlighting, intelligent auto-completion, and an integrated debugger. It offers previews, making it an ideal choice for both beginners and experienced developers.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projects/collegeRecommender/index.html" target="_blank">
+                        <div class="project p3">
+                            <div class="projectContent">
+                                <div class="project-heading">MERA COLLEGE</div>
+                                <div class="project-line"></div>
+                                <div class="project-para">The College Recommender is a comprehensive tool designed to help students find the best colleges based on their preferences and qualifications. It features a user-friendly interface where students can input their academic performance, interests, and location preferences. The site then provides personalized college recommendations, complete with detailed profiles, admission requirements, and student reviews. </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projects/WeatherScrapperProject/index.html" target="_blank">
+                        <div class="project p4">
+                            <div class="projectContent">
+                                <div class="project-heading">JANO</div>
+                                <div class="project-line"></div>
+                                <div class="project-para"> The Weather Forecast App of Cities Near you is a user-friendly application designed to provide accurate and real-time weather updates for cities in your vicinity. By utilizing your current location, the app delivers detailed forecasts including temperature, humidity, wind speed, and precipitation for multiple nearby cities.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projects/nearMetro/index.html" target="_blank">
+                        <div class="project p5">
+                            <div class="projectContent">
+                                <div class="project-heading">NEAR METRO</div>
+                                <div class="project-line"></div>
+                                <div class="project-para">The Near Metro Finder is a convenient tool designed to help users locate the nearest metro stations quickly and easily. With an intuitive interface, users can input their current location or select a point on the map to see nearby metro stations, complete with distances and estimated travel times. The tool provides real-time updates on metro schedules, service disruptions, and route planning options to optimize travel.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projects/Inventory Mangement System/HTML/index.html" target="_blank">
+                    <div class="project p1">
+                        <div class="projectContent">
+                            <div class="project-heading">IMS</div>
+                            <div class="project-line"></div>
+                            <div class="project-para">An inventory management system is a tool that tracks and controls stock levels, orders, and shipments in real time. It helps ensure you have the right amount of inventory at the right time, reduces errors, and improves efficiency by providing insights and managing inventory-related tasks automatically.</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Projects/Project 2(CodePen)/index.html" target="_blank">
+                    <div class="project p2">
+                        <div class="projectContent">
+                            <div class="project-heading">CODEPEN</div>
+                            <div class="project-line"></div>
+                            <div class="project-para">The Web Dev Code Editor is a powerful tool designed to streamline web development with features like real-time syntax highlighting, intelligent auto-completion, and an integrated debugger. It offers previews, making it an ideal choice for both beginners and experienced developers.</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Projects/collegeRecommender/index.html" target="_blank">
+                    <div class="project p3">
+                        <div class="projectContent">
+                            <div class="project-heading">MERA COLLEGE</div>
+                            <div class="project-line"></div>
+                            <div class="project-para">The College Recommender is a comprehensive tool designed to help students find the best colleges based on their preferences and qualifications. It features a user-friendly interface where students can input their academic performance, interests, and location preferences. The site then provides personalized college recommendations, complete with detailed profiles, admission requirements, and student reviews. </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Projects/WeatherScrapperProject/index.html" target="_blank">
+                    <div class="project p4">
+                        <div class="projectContent">
+                            <div class="project-heading">JANO</div>
+                            <div class="project-line"></div>
+                            <div class="project-para"> The Weather Forecast App of Cities Near you is a user-friendly application designed to provide accurate and real-time weather updates for cities in your vicinity. By utilizing your current location, the app delivers detailed forecasts including temperature, humidity, wind speed, and precipitation for multiple nearby cities.</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Projects/nearMetro/index.html" target="_blank">
+                    <div class="project p5">
+                        <div class="projectContent">
+                            <div class="project-heading">NEAR METRO</div>
+                            <div class="project-line"></div>
+                            <div class="project-para">The Near Metro Finder is a convenient tool designed to help users locate the nearest metro stations quickly and easily. With an intuitive interface, users can input their current location or select a point on the map to see nearby metro stations, complete with distances and estimated travel times. The tool provides real-time updates on metro schedules, service disruptions, and route planning options to optimize travel.</div>
+                        </div>
+                    </div>
+                </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- contact-me -->
+        <div id="contact-me" class="link"></div>
+        <div class="about-me-page" id="contact-me">
+            <div class="about-me-container">
+                <div class="aboutm-me-heading">Contact</div>
+                <div class="about-me-line"></div>
+                <div class="about-me-content">
+
+                    <form class="form" action="form-response.php" method="POST">
+                        <input type="text" class="input" name="name" pattern=[A-Z\sa-z]{3,20} placeholder="Name"
+                            required>
+                        <input type="email" class="input" name="email" placeholder="Email" required>
+                        <textarea class="input text-area" name="message" value="  " required></textarea>
+                        <input type="submit" value="Chat" class="form-btn">
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- rest -->
+        <div class="rest-of-webpage">
+            <div class="rest-container">
+                <div class="rest-text-head">Tanishq Pal</div>
+                <div class="rest-links">
+                    <a href="https://x.com/TanCoding" target="_blank" class="rest-logo"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://medium.com/@tanishqpal175" class="rest-logo" target="_blank"> <i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tanishq_pal_0902/" class="rest-logo" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="rest-copyright">
+                    <i class="fa-regular fa-copyright"></i>
+                    <div>2024 copyright </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
